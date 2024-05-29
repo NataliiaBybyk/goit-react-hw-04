@@ -3,20 +3,21 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
+  margin-top: 20px;
 }
 
-.image-gallery li .image-card {
-  width: 200px; /* Встановіть ширину відповідно до вашого дизайну */
+li {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+
+  cursor: pointer;
+  position: relative;
 }
 
-.image-gallery li .image-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.image-gallery li .image-card p {
-  margin-top: 5px;
-  font-size: 14px;
-  text-align: center;
+li:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 80px 5px #3d2fdbb3, 0px 50px 80px 15px rgb(0, 0, 0, 1);
+  z-index: 3;
 }
